@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>people xiao</title>
+	<style>
+	*{
+		list-style: none;
+		padding:0;
+		margin:0;
+	}
+	.wrapper{
+		position: relative;
+		width: 600px;
+		height: 400px;
+	}
+	.wrapper ul{
+		width: 600px;
+	}
+	.wrapper ul li {
+		width: 200px;
+		height: 100px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 1000px;
+		color: purple;
+		line-height: 100px;
+	}
+	.wrapper ul li div{
+		position: absolute;
+		top: 10px;
+		left: 100px;
+		width: 300px;
+		height: 500px;
+		opacity: 0;
+		transition: all 1s ease-out;
+	}
+	/*.wrapper ul li {
+		text-align: center;
+		font-size: 20px;
+		font-weight: 1000px;
+		color: purple;
+		line-height: 100px;
+	}*/
+	.wrapper ul li:nth-child(1) div{
+		background: url('晓.jpg');
+		background-size: 100% 100%;
+	}
+	.wrapper ul li:nth-child(2) div{
+		background: url('晓晓.jpg');
+		background-size: 100% 100%;
+	}
+	.wrapper ul li:nth-child(3) div{
+		background: url('xiao.jpeg');
+		background-size: 100% 100%;
+	}
+	.wrapper ul li:nth-child(4) div{
+		background: url('xiaoxiao.jpeg');
+		background-size: 100% 100%;
+	}
+	.wrapper ul li span {
+		position: relative;
+		left: 100px;
+		display: block;
+		width: 200px;
+		height: 100px;
+		z-index: 999;
+	}
+	.wrapper ul li:hover div{
+		left:250px;
+		opacity: 1;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<ul>
+			<li>
+				<span>I</span>
+				<div></div>
+			</li>
+			<li>
+				<span>LOVE</span>
+				<div></div>
+			</li>
+			<li>
+				<span>CHEN</span>
+				<div></div>
+			</li>
+			<li>
+				<span>XIAO</span>
+				<div></div>
+			</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
